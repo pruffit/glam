@@ -23,7 +23,7 @@ export default function Letter() {
           </p>
           <p className="mb-4 text-lg">
             Dress to impress in your most outrageous and fabulous Glam Rock attire. Think big hair, bold makeup, leather, studs, and all things
-            sparkly. It's time to channel your favorite rock icons and show off your unique style!
+            sparkly. It&apos;s time to channel your favorite rock icons and show off your unique style!
           </p>
           <Image src="/images/glam-rock-band.jpg" alt="Glam Rock Band" width={600} height={300} className="mb-6 rounded-lg" />
           <p className="text-lg">
