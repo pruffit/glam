@@ -61,7 +61,7 @@ export default function Home() {
         transition={{ duration: 1 }}
         className="relative z-20 flex min-h-screen flex-col items-center justify-center"
       >
-        <h1 className="mb-8 text-4xl font-bold text-white glam-text-shadow">ВВЕДИТЕ КОД</h1>
+        <h1 className="md:mb-8 mb-4 md:text-4xl text-xl font-bold text-white glam-text-shadow">ВВЕДИТЕ КОД</h1>
         <div className="flex flex-col items-center space-y-4">
           <div className="flex space-x-4">
             {password.map((char, index) => (
@@ -72,9 +72,9 @@ export default function Home() {
                 maxLength={1}
                 value={char}
                 onChange={(e) => handleChange(index, e.target.value)}
-                className={`h-16 w-16 rounded-md border-2 ${
+                className={`md:h-16 md:w-16 h-12 w-12 rounded-md border-2 ${
                   isValid === null ? 'border-white' : isValid ? 'border-green-500' : 'border-red-500'
-                } bg-transparent text-center text-3xl text-white outline-none glam-text-shadow`}
+                } bg-transparent text-center md:text-3xl text-lg text-white outline-none glam-text-shadow`}
                 whileFocus={{ scale: 1.1 }}
                 transition={{ type: 'spring', stiffness: 300 }}
                 disabled={isValid !== null}
@@ -87,7 +87,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
-                className={`text-xl bg-white rounded-lg p-5 font-bold ${isValid ? 'text-green-500' : 'text-red-500'} glam-text-shadow`}
+                className={`md:text-xl text-sm bg-white rounded-lg md:p-5 p-2 font-bold ${isValid ? 'text-green-500' : 'text-red-500'} glam-text-shadow`}
               >
                 {isValid ? 'Доступ разрешен! Переход...' : 'Не верный код. Попробуйте еще раз.'}
               </motion.div>

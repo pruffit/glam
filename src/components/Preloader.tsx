@@ -60,15 +60,15 @@ export default function Preloader({ onDone }: { onDone: () => void }) {
       className="fixed inset-0 z-50 flex items-center justify-center bg-black"
       style={{ pointerEvents: loading ? 'auto' : 'none' }}
     >
-      <div className="bg-black flex items-center space-x-4 z-50">
+      <div className="bg-black flex items-center space-x-4 z-50 md:flex-row flex-col">
         <div ref={mountRef} className="w-50 h-50"></div>
-        <div className="w-px h-24 bg-white opacity-50"></div>
+        <div className="w-px md:h-24 h-12 bg-white md:opacity-50 opacity-0"></div>
         <div className="flex flex-col items-start">
           <motion.p
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
-            className="text-white text-2xl font-bold mb-2"
+            className="text-white md:text-2xl text-lg font-bold mb-2"
           >
             ЗАГРУЗКА
           </motion.p>
@@ -76,7 +76,7 @@ export default function Preloader({ onDone }: { onDone: () => void }) {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7 }}
-            className="text-white text-sm mb-1"
+            className="text-white md:text-sm text-xs mb-1"
           >
             SKURATOV COFFEE ROASTERS
           </motion.p>
@@ -84,7 +84,7 @@ export default function Preloader({ onDone }: { onDone: () => void }) {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9 }}
-            className="text-white text-sm"
+            className="text-white md:text-sm text-xs"
           >
             ЗИМА 2024-2025
           </motion.p>
