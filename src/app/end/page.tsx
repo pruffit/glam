@@ -51,7 +51,7 @@ export default function Letter() {
 									<li className='md:text-3xl p-2 text-xl'>Elena <div className='text-black inline font-semibold'>Andreychenko</div></li>
 									<li className='md:text-3xl p-2 text-xl'>Nikolay <div className='text-black inline font-semibold'>fizz dream</div></li>
 									<li className='md:text-3xl p-2 text-xl'>Danil <div className='text-black inline font-semibold'>Kotlaev</div></li>
-									<div className='text-black md:text-2xl text-base p-4 font-bold'>Maybe we'll come back again.</div>
+									<div className='text-black md:text-2xl text-base p-4 font-bold'>Maybe we&apos;'ll come back again.</div>
 								</ul>
 							)}
 						</div>
